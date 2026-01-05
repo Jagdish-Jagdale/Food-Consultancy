@@ -39,7 +39,7 @@ const Navbar = () => {
                 animate={{ y: 0 }}
                 transition={{ duration: 0.5 }}
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-                    ? 'bg-white/95 backdrop-blur-md shadow-lg'
+                    ? 'bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-200'
                     : 'bg-transparent'
                     }`}
             >
@@ -60,13 +60,13 @@ const Navbar = () => {
                         </motion.a>
 
                         {/* Desktop Navigation */}
-                        <div className="hidden lg:flex items-center gap-8">
+                        <div className="hidden lg:flex items-center justify-end gap-10 flex-1 ml-12">
                             {navLinks.map((link) => (
                                 <motion.button
                                     key={link.name}
                                     whileHover={{ y: -2 }}
                                     onClick={() => scrollToSection(link.href)}
-                                    className={`font-medium transition-colors ${isScrolled
+                                    className={`font-medium transition-colors px-4 py-2 ${isScrolled
                                         ? 'text-gray-700 hover:text-purple-900'
                                         : 'text-white/90 hover:text-white'
                                         }`}
@@ -74,9 +74,6 @@ const Navbar = () => {
                                     {link.name}
                                 </motion.button>
                             ))}
-                            <Button variant="primary" size="sm">
-                                Contact Us
-                            </Button>
                         </div>
 
                         {/* Mobile Menu Button */}
