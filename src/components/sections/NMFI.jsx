@@ -24,15 +24,15 @@ const NMFI = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <span className="text-orange-400 font-semibold text-lg mb-4 block">
+                        <span className="text-orange-400 font-semibold text-lg block" style={{ marginBottom: '1.5rem' }}>
                             Our Unique Approach
                         </span>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white" style={{ marginBottom: '1.5rem' }}>
                             Navigating Marketable{' '}
                             <span className="text-orange-400">Food Innovation</span>
                         </h2>
-                        <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-                            NMFI is designed exclusively by Food Buddies to navigate entrepreneurs
+                        <p className="text-gray-300 text-lg leading-relaxed" style={{ marginBottom: '1.5rem' }}>
+                            NMFI is designed exclusively by Safe Science to navigate entrepreneurs
                             from food ideation to market success. This proven process integrates
                             various verticals of the product development cycle to ensure significant
                             market success.
@@ -48,7 +48,7 @@ const NMFI = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className="grid grid-cols-2 gap-4"
+                        className="grid grid-cols-2 gap-x-12 gap-y-6"
                     >
                         {steps.map((step, index) => (
                             <motion.div
@@ -58,7 +58,8 @@ const NMFI = () => {
                                 viewport={{ once: true }}
                                 transition={{ delay: index * 0.1 }}
                                 whileHover={{ scale: 1.05, y: -5 }}
-                                className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:border-orange-400/50 transition-all"
+                                className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/10 hover:border-orange-400/50 transition-all"
+                                style={{ paddingLeft: '3rem', paddingRight: '2rem', paddingTop: '1.5rem', paddingBottom: '1.5rem' }}
                             >
                                 <span className="text-4xl font-bold text-orange-400 block mb-2">
                                     {step.number}
