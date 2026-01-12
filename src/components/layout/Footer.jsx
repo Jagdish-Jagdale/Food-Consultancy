@@ -50,10 +50,12 @@ const Footer = () => {
                         transition={{ duration: 0.5 }}
                     >
                         <div className="flex items-center gap-2 mb-6">
-                            <div className="w-10 h-10 bg-gradient-to-br from-purple-600 to-orange-500 rounded-lg flex items-center justify-center">
-                                <span className="text-white font-bold text-xl">F</span>
-                            </div>
-                            <span className="text-xl font-bold">Food Buddies</span>
+                            <img
+                                src="/FoodConsultancy.png"
+                                alt="Safe Science Logo"
+                                className="w-10 h-10 object-contain"
+                            />
+                            <span className="text-xl font-bold">Safe Science</span>
                         </div>
                         <p className="text-gray-400 mb-6">
                             Award-winning food consultancy guiding brands from concept to commercialization with R&D, product development, and innovation across India.
@@ -172,7 +174,7 @@ const Footer = () => {
             {/* Bottom Bar */}
             <div className="border-t border-gray-800">
                 <div className="container-custom py-6 text-center text-gray-500 text-sm">
-                    © {currentYear} FoodBuddies, All Rights Reserved.
+                    © {currentYear} Safe Science, All Rights Reserved.
                 </div>
             </div>
         </footer>

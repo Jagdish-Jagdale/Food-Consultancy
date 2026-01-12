@@ -22,7 +22,8 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
+                        className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
+                        style={{ lineHeight: '1' }}
                     >
                         Co-Create your{' '}
                         <span className="text-orange-400">Food Success Story</span>{' '}
@@ -33,7 +34,8 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.4 }}
-                        className="text-lg md:text-xl text-gray-200 mb-8"
+                        className="text-lg md:text-xl text-gray-200"
+                        style={{ marginBottom: '1rem' }}
                     >
                         Full-spectrum food consultancy guiding brands from concept to commercialization
                         with R&D, product development, and innovation across India.
@@ -43,13 +45,14 @@ const Hero = () => {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8, delay: 0.6 }}
-                        className="flex flex-col sm:flex-row gap-4"
+                        className="flex items-start"
                     >
-                        <Button variant="primary" size="lg">
+                        <Button
+                            variant="primary"
+                            size="lg"
+                            className="font-semibold shadow-2xl hover:shadow-orange-500/50 transition-all duration-300"
+                        >
                             Contact Us
-                        </Button>
-                        <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-purple-900">
-                            Our Services
                         </Button>
                     </motion.div>
                 </div>

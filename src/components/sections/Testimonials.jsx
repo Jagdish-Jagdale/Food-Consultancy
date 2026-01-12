@@ -7,25 +7,25 @@ const Testimonials = () => {
 
     const testimonials = [
         {
-            quote: "Food Buddies has made our product truly unique, surpassing Kellogg's Cornflakes in colour and appearance, achieving an outstanding result without the use of artificial colouring.",
+            quote: "Safe Science has made our product truly unique, surpassing Kellogg's Cornflakes in colour and appearance, achieving an outstanding result without the use of artificial colouring.",
             author: 'Mr. Krishna Mohan',
             company: 'Agasthya Foods',
             avatar: 'KM',
         },
         {
-            quote: "Food Buddies has been our valuable associates in developing new ideas and thought process for our new products, bringing in excitement and nostalgia. They've been a great partner in developing our new products.",
+            quote: "Safe Science has been our valuable associates in developing new ideas and thought process for our new products, bringing in excitement and nostalgia. They've been a great partner in developing our new products.",
             author: 'Mr. Ravi Kabra',
             company: 'CEO & Co-Founder, Skippi Ice Pops',
             avatar: 'RK',
         },
         {
-            quote: "Food Buddies provided incredible support throughout our plant setup. Their expertise made the process seamless, and their commitment didn't stop at installation. The ongoing guidance was truly commendable.",
+            quote: "Safe Science provided incredible support throughout our plant setup. Their expertise made the process seamless, and their commitment didn't stop at installation. The ongoing guidance was truly commendable.",
             author: 'Ms. Pratima Kolpe',
             company: 'Founder, Sparklo',
             avatar: 'PK',
         },
         {
-            quote: "We have worked with the Food Buddies Team for almost 4 projects in the health-based food sector, few products were developed as first in India. This young and dynamic team helped us to get the desired product on time.",
+            quote: "We have worked with the Safe Science Team for almost 4 projects in the health-based food sector, few products were developed as first in India. This young and dynamic team helped us to get the desired product on time.",
             author: 'Team',
             company: 'AVT Natural Products Limited',
             avatar: 'AT',
@@ -114,8 +114,8 @@ const Testimonials = () => {
                                         key={index}
                                         onClick={() => setCurrentIndex(index)}
                                         className={`w-3 h-3 rounded-full transition-all ${index === currentIndex
-                                                ? 'bg-orange-500 w-6'
-                                                : 'bg-white/30 hover:bg-white/50'
+                                            ? 'bg-orange-500 w-6'
+                                            : 'bg-white/30 hover:bg-white/50'
                                             }`}
                                     />
                                 ))}
